@@ -7,6 +7,7 @@ import About from './about'
 import XIcon from '@mui/icons-material/X';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import Contact from './contact'
 
 const Home = () => {
     return (
@@ -14,7 +15,7 @@ const Home = () => {
             <div className='logo'>
                 <img src={logo} alt="logo" />
                 <br />
-                <div className='flex gap-4 justify-end pr-5 text-white'>
+                <div className='flex gap-4 justify-end text-white'>
                     <XIcon className='hover:text-[#fdda34] hover:cursor-pointer' fontSize='medium' />
                     <LinkedInIcon className='hover:text-[#fdda34] hover:cursor-pointer' fontSize='medium' />
                     <InstagramIcon className='hover:text-[#fdda34] hover:cursor-pointer' fontSize='medium' />
@@ -33,6 +34,7 @@ const Home = () => {
                 <Work />
                 <Services />
                 <About />
+                <Contact />
             </div>
         </>
 

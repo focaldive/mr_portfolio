@@ -21,6 +21,6 @@ export const Navigation = () => (
   </>
 );
 
-const itemIds = [0, 1, 2, 3];
-const items = ["Home", "Work", "Services", "About"];
-const links = ["/#intro", "/#work", "/#service", "/#about"];
+const itemIds = [0, 1, 2, 3,4];
+const items = ["Home", "Work", "Services", "About", "Contact"];
+const links = ["/#", "/#work", "/#service", "/#about", "/#contact"];
