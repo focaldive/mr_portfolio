@@ -2,7 +2,7 @@ import React from 'react'
 
 const CardWork = () => {
     return (
-        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-[#141414] dark:border-gray-700">
+        <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-[#141414] dark:border-gray-700">
             <a href="#">
                 <img className="rounded-t-lg" src="https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
             </a>

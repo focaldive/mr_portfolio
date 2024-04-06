@@ -7,7 +7,7 @@ const Work = () => {
             <h1 className='font-medium text-3xl'>Selected Works</h1>
             <br />
             <br />
-            <div className='grid grid-cols-2 gap-10'>
+            <div className='grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 gap-10'>
                 <CardWork />
                 <CardWork />
                 <CardWork />
