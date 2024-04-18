@@ -1,20 +1,15 @@
 import React from "react";
 
-const CardWork = ({ title, description, img_src }) => {
+const CardWork = ({ title, description, img_src, techs = [] }) => {
   const truncatedDescription =
     description.length > 240 ? description.slice(0, 240) + "..." : description;
 
   return (
     <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-[#141414] dark:border-gray-700 relative">
       <a href="#">
-        <img
-          className="rounded-t-lg"
-          src={img_src}
-          alt=""
-          style={{ width: 430, height: 280 }}
-        />
+        <img className="rounded-t-lg bg-cover" src={img_src} />
       </a>
-      <div className="p-5" style={{ marginBottom: "50px" }}>
+      <div className="w-full p-5" style={{ marginBottom: "50px" }}>
         <a>
           <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
             {title}
@@ -23,7 +18,18 @@ const CardWork = ({ title, description, img_src }) => {
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
           {truncatedDescription}
         </p>
+        <div className="w-fit">
+          {techs.map((tech, index) => (
+            <span
+              key={index}
+              className="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
       </div>
+      <br />
       <div className="absolute bottom-4 left-4">
         <a
           href="#"

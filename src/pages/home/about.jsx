@@ -19,7 +19,7 @@ const About = () => {
       <br />
       <h1 className="text-xl font-medium">Work Experience</h1>
       <CardExperience
-        company="Focal Dive"
+        company="FocalDive"
         duration="2024 - Present"
         description="Focal Dive is a software development company that specializes in building web and mobile applications. As a Full Stack Developer, I am responsible for developing and maintaining the company's software products."
       />
